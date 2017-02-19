@@ -12,6 +12,8 @@
 		05DFE8361E56506C00BC6DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DFE8341E56506C00BC6DE1 /* Main.storyboard */; };
 		05DFE8381E56506C00BC6DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DFE8371E56506C00BC6DE1 /* Assets.xcassets */; };
 		05DFE83B1E56506C00BC6DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DFE8391E56506C00BC6DE1 /* LaunchScreen.storyboard */; };
+		05E584701E5A282B00FB011E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5846F1E5A282B00FB011E /* CustomButton.swift */; };
+		05E584721E5A297900FB011E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E584711E5A297900FB011E /* RoundedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		05DFE8371E56506C00BC6DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05DFE83A1E56506C00BC6DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05DFE83C1E56506C00BC6DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E5846F1E5A282B00FB011E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		05E584711E5A297900FB011E /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,41 @@
 		05DFE82F1E56506C00BC6DE1 /* LoanCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				05E5846E1E5A251C00FB011E /* Controller */,
+				05E5846D1E5A251600FB011E /* View */,
+				05E5846C1E5A250B00FB011E /* Model */,
 				05DFE8301E56506C00BC6DE1 /* AppDelegate.swift */,
-				05DFE8321E56506C00BC6DE1 /* CalculationsVC.swift */,
 				05DFE8341E56506C00BC6DE1 /* Main.storyboard */,
 				05DFE8371E56506C00BC6DE1 /* Assets.xcassets */,
 				05DFE8391E56506C00BC6DE1 /* LaunchScreen.storyboard */,
 				05DFE83C1E56506C00BC6DE1 /* Info.plist */,
 			);
 			path = LoanCalculator;
+			sourceTree = "<group>";
+		};
+		05E5846C1E5A250B00FB011E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		05E5846D1E5A251600FB011E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05E5846F1E5A282B00FB011E /* CustomButton.swift */,
+				05E584711E5A297900FB011E /* RoundedTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05E5846E1E5A251C00FB011E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05DFE8321E56506C00BC6DE1 /* CalculationsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,8 @@
 			files = (
 				05DFE8331E56506C00BC6DE1 /* CalculationsVC.swift in Sources */,
 				05DFE8311E56506C00BC6DE1 /* AppDelegate.swift in Sources */,
+				05E584701E5A282B00FB011E /* CustomButton.swift in Sources */,
+				05E584721E5A297900FB011E /* RoundedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +337,7 @@
 				05DFE8411E56506C00BC6DE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
