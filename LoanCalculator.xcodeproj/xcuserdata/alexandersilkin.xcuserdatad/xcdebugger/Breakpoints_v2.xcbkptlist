@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoanCalculator/CalculationsVC.swift"
-            timestampString = "509309065.316373"
+            timestampString = "509317408.181825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "calculateAPR(borrowed:interest:months:)"
             landmarkType = "7">
          </BreakpointContent>
