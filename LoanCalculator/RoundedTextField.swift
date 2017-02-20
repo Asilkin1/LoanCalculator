@@ -37,6 +37,7 @@ import UIKit
             }
         }
         
+        
         @IBInspectable var placeholderColor: UIColor? {
             didSet {
                 let rawString = attributedPlaceholder?.string != nil ? attributedPlaceholder!.string : ""

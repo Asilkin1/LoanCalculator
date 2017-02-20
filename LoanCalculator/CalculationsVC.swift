@@ -8,12 +8,27 @@
 
 import UIKit
 
-class CalculationsVC: UIViewController {
+class CalculationsVC: UIViewController{
 
     @IBOutlet weak var borrowedField: UITextField!
     @IBOutlet weak var interestField: UITextField!
     @IBOutlet weak var monthsField: UITextField!
     @IBOutlet weak var paymentPermonthLBL: UILabel!
+    
+    
+    
+    
+    
+    // Initial View Load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+       
+    }
+    
+    
+    
+
     
 
     
@@ -21,7 +36,7 @@ class CalculationsVC: UIViewController {
     
     func calculateAPR(borrowed: String, interest: String, months: String) -> Float {
         
-        //new Formula 
+        //Formula
         let months = Int(months)!
         let interest = Float(interest)! / 100
         let principal = Int(borrowed)
@@ -29,7 +44,7 @@ class CalculationsVC: UIViewController {
         let r = Float(borrowed)! * interest / 12
         
         
-        var monthlyPayment = (Float(principal!) + (r * Float(n))) / Float(n)
+        let monthlyPayment = (Float(principal!) + (r * Float(n))) / Float(n)
         
         print(r)
         print(months)
@@ -46,16 +61,12 @@ class CalculationsVC: UIViewController {
     
     
     
+    
+    
+    
     @IBAction func getResultButton(_ sender: Any) {
         
         paymentPermonthLBL.text = "$\(calculateAPR(borrowed:borrowedField.text!, interest:interestField.text!, months: monthsField.text! ))"
-        
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
         
         
     }
