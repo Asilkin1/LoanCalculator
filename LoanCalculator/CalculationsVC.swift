@@ -28,9 +28,6 @@ class CalculationsVC: UIViewController{
     }
     
     
-    
-
-    
 
     
     //Calculate APR
@@ -43,6 +40,10 @@ class CalculationsVC: UIViewController{
         let principal = Int(borrowed)
         let n = Int(months)
         let r = Float(borrowed)! * interest / 12
+        
+        // String format 
+        
+        
         
         
         let monthlyPayment = (Float(principal!) + (r * Float(n))) / Float(n)

@@ -12,6 +12,11 @@ import UIKit
     @IBDesignable
     class RoundTextField: UITextField {
         
+        var formattingPattern = "***,***,***"
+        
+        var replacementChar: Character = "*"
+        
+     
         
         @IBInspectable var leftImage: UIImage? {
         
@@ -31,7 +36,16 @@ import UIKit
                 
                 imageView.image = image
                 
-                let width = leftPadding + 20
+                var width = leftPadding + 20
+                
+                // Check border style
+                if borderStyle == UITextBorderStyle.none || borderStyle ==  UITextBorderStyle.line {
+                     width = width + 5
+                    
+                
+                    
+                
+                }
                 let view = UIView(frame:CGRect(x: 0, y: 0, width: width, height: 20))
                 view.addSubview(imageView)
                 leftView = view

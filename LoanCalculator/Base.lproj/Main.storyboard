@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,67 +18,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="bnQ-sx-4NK" userLabel="User input">
-                                <rect key="frame" x="12.5" y="50" width="350.5" height="368"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bnQ-sx-4NK" userLabel="User input">
+                                <rect key="frame" x="57" y="50" width="300" height="418"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-HY-ibQ" userLabel="LogoWithText">
-                                        <rect key="frame" x="0.0" y="0.0" width="350.5" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50.666666666666671"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zuv-Sq-SaG" userLabel="Carlogo">
-                                                <rect key="frame" x="0.0" y="0.0" width="124" height="51"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="50.666666666666671"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carlogo" translatesAutoresizingMaskIntoConstraints="NO" id="QXz-4A-RVp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124" height="51"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="50.666666666666671"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-PP-PNP" userLabel="Text">
-                                                <rect key="frame" x="124" y="0.0" width="226.5" height="51"/>
+                                                <rect key="frame" x="101" y="0.0" width="199" height="50.666666666666671"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple loan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-UL-gwM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="226.5" height="51"/>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="37"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple loan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-UL-gwM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="199" height="50.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="37"/>
                                                         <color key="textColor" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gk2-PP-PNP" firstAttribute="leading" secondItem="k2e-HY-ibQ" secondAttribute="leading" constant="101" id="vUm-OL-x1K"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-NT-2y6" userLabel="Borrowed">
-                                        <rect key="frame" x="0.0" y="64" width="350.5" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="74.666666666666657" width="300" height="48.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMOUNT BORROWED:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZV-Ak-u0l">
-                                                <rect key="frame" x="0.0" y="0.0" width="350.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.39332726883561642" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15n-uL-SvM" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="20.5" width="350.5" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="18"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15n-uL-SvM" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20.666666666666671" width="300" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="MI7-cL-Det"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
+                                                        <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="value" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.040427011950684925" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="$-1"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="dollar"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
@@ -87,22 +93,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vym-yY-Cu7" userLabel="Interest rate">
-                                        <rect key="frame" x="0.0" y="127.5" width="350.5" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="147.33333333333337" width="300" height="48.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTEREST RATE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-MG-HUa">
-                                                <rect key="frame" x="0.0" y="0.0" width="350.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.39332726883561642" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Jm-x6-OTV" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="20.5" width="350.5" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="18"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Jm-x6-OTV" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20.666666666666657" width="300" height="28"/>
+                                                <color key="textColor" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
+                                                        <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
@@ -111,12 +117,12 @@
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.042487157498630135" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="%-1"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="percent"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
@@ -125,63 +131,84 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Ob-tG-0M3" userLabel="Months of payment">
-                                        <rect key="frame" x="0.0" y="191" width="350.5" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="220" width="300" height="49.666666666666686"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="751" text="MONTHS OF PAYMENT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-mG-s7Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="350.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.39332726883561642" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-n7-WOm" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="20.5" width="350.5" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLZ-n7-WOm" customClass="RoundTextField" customModule="LoanCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20.666666666666686" width="300" height="29"/>
+                                                <color key="textColor" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
+                                                        <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="value" red="0.028440508991479874" green="0.2882111668586731" blue="0.94732540845870972" alpha="0.04090860441643835" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="calendar"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-uw-e6h" userLabel="Monthly payment">
+                                        <rect key="frame" x="0.0" y="293.66666666666674" width="300" height="57.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR MONTHLY PAYMENT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-tA-e2u">
+                                                <rect key="frame" x="42" y="0.0" width="216.33333333333331" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.33528254969866955" green="0.41513640772896487" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiV-c3-wag">
+                                                <rect key="frame" x="141.33333333333334" y="20.333333333333314" width="17.333333333333314" height="37"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                                <color key="textColor" red="0.31494755323840307" green="0.65669113518622924" blue="0.37795013522606963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="THo-qW-Efb" userLabel="CalculateButton">
-                                        <rect key="frame" x="0.0" y="254.5" width="350.5" height="43"/>
+                                        <rect key="frame" x="0.0" y="375" width="300" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agw-7u-fgi" customClass="CustomButton" customModule="LoanCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="25.5" y="0.0" width="300" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="jpv-MJ-UEY"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
                                                 <state key="normal" title="CALCULATE">
-                                                    <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.99978124549702019" green="1" blue="0.98589120939048047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="12"/>
+                                                        <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="value" red="0.58041756639999997" green="0.74995251169999999" blue="0.93737477120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -190,27 +217,10 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-uw-e6h" userLabel="Monthly payment">
-                                        <rect key="frame" x="0.0" y="310.5" width="350.5" height="57.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR MONTHLY PAYMENT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-tA-e2u">
-                                                <rect key="frame" x="67" y="0.0" width="216.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiV-c3-wag">
-                                                <rect key="frame" x="166.5" y="20.5" width="17.5" height="37"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
-                                                <color key="textColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bnQ-sx-4NK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZX-PM-uIZ"/>
@@ -230,8 +240,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="$-1" width="8" height="14"/>
-        <image name="%-1" width="13" height="12"/>
         <image name="Carlogo" width="124" height="41"/>
+        <image name="calendar" width="20" height="21"/>
+        <image name="dollar" width="11" height="20"/>
+        <image name="percent" width="20" height="20"/>
     </resources>
 </document>
